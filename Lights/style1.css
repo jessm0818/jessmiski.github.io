@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+
+.coming-soon-regular {
+    font-family: "Coming Soon", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 10vw(calc -0.5);
+    position: fixed;
+    top: 40%;
+    left: 50%;
+  }
+
+#homepage {
+  background-image: url("bedroom.png");
+  background-size: cover;
+}
+
+.lightbulb:hover {
+  animation: horizontal-shaking 0.65s infinite;
+}
+
+@keyframes horizontal-shaking {
+  0% { transform: translateX(0)}
+  25% { transform: translateX(5px)}
+  50% { transform: translateX(-5px)}
+  75% { transform: translateX(5px)}
+  100% { transform: translateX(0px)}
+}
+
+#smiskis {
+  top: 50%; 
+  position: relative; 
+  left: 50%;
+}
