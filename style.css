@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+
+.coming-soon-regular {
+    font-family: "Coming Soon", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 10vw(calc -0.5);
+    position: fixed;
+    top: 40%;
+    left: 50%;
+  }
+
+  #homepage {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes horizontal-shaking {
+  0% { transform: translateX(0)}
+  25% { transform: translateX(5px)}
+  50% { transform: translateX(-5px)}
+  75% { transform: translateX(5px)}
+  100% { transform: translateX(0px)}
+}
+
+.lightcontainer {
+  margin-bottom: 20px;
+}
+
+.bulb:hover {
+  animation: horizontal-shaking 0.75s infinite;
+  
+}
+
+.bulb {
+  width: 400px;
+  height: 450px;
+  background: url('lightoff.png') no-repeat center center;
+  background-size: contain;
+  cursor: pointer;
+  position: fixed; 
+  top: 0vh;
+  left: 50vw;
+  width: 20vw;
+  height: 20vh;
+}
+
+.bulb:active {
+  background: url('lighton.png') no-repeat center center;
+  background-size: contain;
+}
+
+.smiski-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.smiski {
+  position: relative;
+  width: 100px;
+  height: 150px;
+  background-size: contain;
+  margin: 0 10px;
+}
+
+/* .bulb:active ~ .container #smiski1 {
+  background: url('scared.png') no-repeat center center;
+  background-size: contain;
+}
+.bulb:active ~ .smiski #smiski2 {
+  background: url('hiding.png') no-repeat center center;
+  background-size: contain;
+}
+
+.bulb:active ~ .smiski #smiski3 {
+  background: url('teddy.png') no-repeat center center;
+  background-size: contain;
+} */
+
+
+#smiski1 {
+  background: url('sleep.png');
+}
+
+#toggle:checked + .bulb + .smiski #smiski1 {
+  background: url('scared.png');
+}
+
+
+@media (max-width: 768px) {
+.pillow.png {
+  display: none;
+}
+}
+
+@media (max-width: 480px) {
+  #crying.png {
+    display: none;
+  }
+}
